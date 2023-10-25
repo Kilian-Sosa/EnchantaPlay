@@ -1,20 +1,21 @@
 ﻿[
   {
     "id": 1,
-    "gameTitle": "The Hanged Man",
-    "gameDraw": "------------------;|       |        \\;\\       |        |;        O        |;       /|\\       |;       / \\       |;                 |;                 |"
+    "gameTitle": "Hangman",
+    "gameDraw": "------------------;|       |        \\;\\       |        |;        O        |;       /|\\       |;       / \\       |;                 |;                 |",
+    "description": "Hangman is a word-guessing game that can be played with two or more players. One player thinks of a word, phrase, or saying and keeps it secret, while the other player(s) attempt to guess the hidden word one letter at a time. If the guessing player(s) guess a letter that is in the secret word, the letter is revealed in its correct position. If the guessed letter is not in the word, a part of a hangman figure is drawn (usually on a gallows)."
     // _________________________________________
     // /                                       \
-    // |           The Hanged Man              |
+    // |                Hangman                |
     // |                                       |
-    // |         -----------------             |
-    // |         |       |        \            |
-    // |         \       |        |            |
-    // |                 O        |            |
-    // |                /|\       |            |
-    // |                / \       |            |
-    // |                          |            |
-    // |                          |            |
+    // |          -----------------            |
+    // |          |       |        \           |
+    // |          \       |        |           |
+    // |                  O        |           |
+    // |                 /|\       |           |
+    // |                 / \       |           |
+    // |                           |           |
+    // |                           |           |
     // |                                       |
     // |      Platform: [ ]                    |
     // |      Genre:    [ ]                    |
@@ -27,19 +28,20 @@
   {
     "id": 2,
     "gameTitle": "BlackJack 21",
-    "gameDraw": " +-------+        ; |A     +-------+ ; |      |K      | ; |   ♥  |       | ; |      |   ♣   | ; |      |       | ; +------|      K| ;        +-------+ "
+    "gameDraw": " +-------+        ; |A     +-------+ ; |      |K      | ; |   ♥  |       | ; |      |   ♣   | ; |      |       | ; +------|      K| ;        +-------+ ",
+    "description":  "Blackjack is a popular card game played in casinos and home settings. The objective is to beat the dealer by having a hand value as close to 21 as possible without exceeding it."
     // _________________________________________
     // /                                       \
     // |            BlackJack 21               |
     // |                                       |
-    // |          +-------+                    |
-    // |          |A     +-------+             |
-    // |          |      |K      |             |
-    // |          |   ♥  |       |             |
-    // |          |      |   ♣   |             |
-    // |          |      |       |             |
-    // |          +------|      K|             |
-    // |                 +-------+             |
+    // |           +-------+                   |
+    // |           |A     +-------+            |
+    // |           |      |K      |            |
+    // |           |   ♥  |       |            |
+    // |           |      |   ♣   |            |
+    // |           |      |       |            |
+    // |           +------|      K|            |
+    // |                  +-------+            |
     // |                                       |
     // |      Platform: [ ]                    |
     // |      Genre:    [ ]                    |
@@ -52,19 +54,20 @@
   {
     "id": 3,
     "gameTitle": "Snake",
-    "gameDraw": "    _    _        ; ,-(|)--(|)-.     ; \\_   ..   _/     ;   \\______/       ;     V  V         ;     `.^^`.     /\\;       \\^^^\\._./ /;        `.______/ "
+    "gameDraw": "    _    _        ; ,-(|)--(|)-.     ; \\_   ..   _/     ;   \\______/       ;     V  V         ;     `.^^`.     /\\;       \\^^^\\._./ /;        `.______/ ",
+    "description": "Snake is a classic arcade game that has been popular for decades. The goal is to control a growing snake and guide it to eat food while avoiding collisions with the snake's own tail or the boundaries of the game board."
     // _________________________________________
     // /                                       \
     // |                Snake                  |
     // |                                       |
-    // |             _    _                    |
-    // |          ,-(|)--(|)-.                 |
-    // |          \_   ..   _/                 |
-    // |            \______/                   |
-    // |              V  V                     |
-    // |              `.^^`.     /\            |
-    // |                \^^^\._./ /            |
-    // |                 `.______/             |
+    // |              _    _                   |
+    // |           ,-(|)--(|)-.                |
+    // |           \_   ..   _/                |
+    // |             \______/                  |
+    // |               V  V                    |
+    // |               `.^^`.     /\           |
+    // |                 \^^^\._./ /           |
+    // |                  `.______/            |
     // |                                       |
     // |      Platform: [ ]                    |
     // |      Genre:    [ ]                    |
