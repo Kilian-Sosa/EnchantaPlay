@@ -1,19 +1,19 @@
 ﻿namespace EnchantaPlay {
     public class GameCase {
-        public Game game { get; private set; }
+        public Game Game { get; private set; }
 
         public GameCase(Game game) {
-            this.game = game;
+            this.Game = game;
         }
 
-        public string ToString() {
-            int titlePadding = GetPaddingLength(game.title);
+        public override string ToString() {
+            int titlePadding = GetPaddingLength(Game.Title);
             string stringCase = "_________________________________________\n";
             stringCase += "/                                       \n";
-            stringCase += "|" + new string(' ', titlePadding) + game.title + new string(' ', titlePadding) + "|\n";
+            stringCase += "|" + new string(' ', titlePadding) + Game.Title + new string(' ', titlePadding) + "|\n";
             stringCase += "|                                        |\n";
 
-            string[] imageArray = game.image.Split(".");
+            string[] imageArray = Game.Image.Split(".");
             for (int i = 0; i < imageArray.Length; i++) 
                 stringCase += $"|          {imageArray[i]}          |\n";
             stringCase += "|                                        |\n";
