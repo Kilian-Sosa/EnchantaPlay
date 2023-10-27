@@ -1,8 +1,14 @@
 ﻿
 
-namespace FantasyConsole {
+using System.Text.Json;
+
+namespace EnchantaPlay {
     public class Program {
+        static List<Game> Games = new List<Game>();
+        static List<GameCase> GameCases = new List<GameCase>();
+        static string gamesPath = "games.json";
         public static void Main(string[] args) {
+            Console.OutputEncoding = System.Text.Encoding.UTF8; // For the card symbols to work
             PrintIntro();
             GetInput();
         }
@@ -27,7 +33,7 @@ namespace FantasyConsole {
             var input = Console.ReadLine();
             switch (input) {
                 case "1":
-                    //PlayGame();
+                    ShowGames();
                     break;
                 case "2":
                     //DevelopGame();
@@ -44,6 +50,27 @@ namespace FantasyConsole {
                     Console.WriteLine("Invalid input. Please try again.");
                     GetInput();
                     break;
+            }
+        }
+
+        private static List<Game> GetGames() {
+            var games = new List<Game>();
+            string jsonResult = File.ReadAllText(gamesPath);
+            return JsonSerializer.Deserialize<List<Game>>(jsonResult);
+        }
+
+        private static void ShowGames() {
+            Console.Clear();
+            if (Games.Count == 0) Games = GetGames();
+            if (GameCases.Count == 0) {
+                GameCases = new List<GameCase>();
+                foreach (var game in Games) GameCases.Add(new GameCase(game));
+            }
+
+            for (int i = 0; i < 20; i++) {
+                foreach (var game in GameCases) 
+                    Console.Write($"{AnsiColor.Green} {game.ToString().Split('\n')[i]} ");
+                Console.WriteLine(AnsiColor.Reset);
             }
         }
 
