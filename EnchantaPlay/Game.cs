@@ -4,10 +4,13 @@
         public string Description { get; private set; }
         public string Draw { get; private set; }
 
-        public Game(string title, string description, string draw) { 
+        public string Color { get; private set; }
+
+        public Game(string title, string description, string draw, string color) { 
             this.Title = title;
             this.Description = description;
             this.Draw = draw;
+            this.Color = color;
         }
     }
 }

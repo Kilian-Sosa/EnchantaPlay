@@ -33,6 +33,7 @@ namespace EnchantaPlay {
             var input = Console.ReadLine();
             switch (input) {
                 case "1":
+                    SetGames();
                     ShowGames();
                     break;
                 case "2":
@@ -59,19 +60,23 @@ namespace EnchantaPlay {
             return JsonSerializer.Deserialize<List<Game>>(jsonResult);
         }
 
+        private static void SetGames() {
+            Games = GetGames();
+            GameCases = new List<GameCase>();
+            foreach (var game in Games) GameCases.Add(new GameCase(game));
+        }
+
         private static void ShowGames() {
             Console.Clear();
-            if (Games.Count == 0) Games = GetGames();
-            if (GameCases.Count == 0) {
-                GameCases = new List<GameCase>();
-                foreach (var game in Games) GameCases.Add(new GameCase(game));
-            }
 
             for (int i = 0; i < 20; i++) {
-                foreach (var game in GameCases) 
-                    Console.Write($"{AnsiColor.Green} {game.ToString().Split('\n')[i]} ");
-                Console.WriteLine(AnsiColor.Reset);
+                foreach (var gameCase in GameCases) {
+                    Console.ForegroundColor = gameCase.Color;
+                    Console.Write($"{gameCase.ToString().Split('\n')[i]} ");
+                }
+                Console.WriteLine();
             }
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
         private static void Exit() {
