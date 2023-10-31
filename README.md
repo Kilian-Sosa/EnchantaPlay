@@ -1,6 +1,5 @@
 # EnchantaPlay
-
- ![image](https://github.com/Kilian-Sosa/EnchantaPlay/assets/85161810/29a4735d-380f-475d-9c3e-7314cab93fd8)
+ ![image](https://github.com/Kilian-Sosa/EnchantaPlay/assets/85161810/fdb1d494-c7bd-4223-9a9d-63483bc30e04)
 
  ## Overview
 
