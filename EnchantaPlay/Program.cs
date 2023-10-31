@@ -95,8 +95,34 @@ namespace EnchantaPlay {
                 Console.WriteLine();
             }
             Console.ForegroundColor = ConsoleColor.White;
+            SelectGame();
         }
 
+        private static void SelectGame() {            
+            do {
+                Console.Write("Please select a game writting the title. Ex: Hangman");
+                Console.Write("\n>> ");
+                string answer = Console.ReadLine() ?? "".ToLower();
+                foreach (var game in Games) {
+                    if (game.Title == answer) {
+                        string gameExePath = Path.Combine(basePath, $@"Games\{game.Title}\bin\Debug\net7.0\{game.Title}.exe");
+                        while (true) {
+                            Console.Clear();
+                            Process gameProcess = new Process();
+                            gameProcess.StartInfo.FileName = gameExePath;
+                            gameProcess.Start();
+                            gameProcess.WaitForExit();
+
+                            Console.ForegroundColor = ConsoleColor.Magenta;
+                            Console.WriteLine("\nDo you want to play again? (y/n)");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            answer = Console.ReadLine() ?? "".ToLower();
+                            if (answer != "y") break;
+                        }
+                        ShowGames();
+                    }
+                }
+            } while (true);
         }
 
         private static void Exit() {

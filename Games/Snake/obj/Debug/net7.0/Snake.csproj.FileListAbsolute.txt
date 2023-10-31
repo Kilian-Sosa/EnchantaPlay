@@ -1,0 +1,14 @@
+C:\Users\Kilian\source\repos\Snake\Snake\bin\Debug\net7.0\Snake.exe
+C:\Users\Kilian\source\repos\Snake\Snake\bin\Debug\net7.0\Snake.deps.json
+C:\Users\Kilian\source\repos\Snake\Snake\bin\Debug\net7.0\Snake.runtimeconfig.json
+C:\Users\Kilian\source\repos\Snake\Snake\bin\Debug\net7.0\Snake.dll
+C:\Users\Kilian\source\repos\Snake\Snake\bin\Debug\net7.0\Snake.pdb
+C:\Users\Kilian\source\repos\Snake\Snake\obj\Debug\net7.0\Snake.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kilian\source\repos\Snake\Snake\obj\Debug\net7.0\Snake.AssemblyInfoInputs.cache
+C:\Users\Kilian\source\repos\Snake\Snake\obj\Debug\net7.0\Snake.AssemblyInfo.cs
+C:\Users\Kilian\source\repos\Snake\Snake\obj\Debug\net7.0\Snake.csproj.CoreCompileInputs.cache
+C:\Users\Kilian\source\repos\Snake\Snake\obj\Debug\net7.0\Snake.dll
+C:\Users\Kilian\source\repos\Snake\Snake\obj\Debug\net7.0\refint\Snake.dll
+C:\Users\Kilian\source\repos\Snake\Snake\obj\Debug\net7.0\Snake.pdb
+C:\Users\Kilian\source\repos\Snake\Snake\obj\Debug\net7.0\Snake.genruntimeconfig.cache
+C:\Users\Kilian\source\repos\Snake\Snake\obj\Debug\net7.0\ref\Snake.dll
