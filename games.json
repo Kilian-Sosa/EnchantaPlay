@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Title": "Hangman",
+    "Draw": "------------------;|       |        \\;\\       |        |;        O        |;       /|\\       |;       / \\       |;                 |;                 |",
+    "Description": "Hangman is a word-guessing game that can be played with two or more players. One player thinks of a word, phrase, or saying and keeps it secret, while the other player(s) attempt to guess the hidden word one letter at a time. If the guessing player(s) guess a letter that is in the secret word, the letter is revealed in its correct position. If the guessed letter is not in the word, a part of a hangman figure is drawn (usually on a gallows).",
+    "Color": "Red"
+  },
+  {
+    "Title": "BlackJack21",
+    "Draw": " +-------+        ; |A     +-------+ ; |      |K      | ; |   ♥  |       | ; |      |   ♣   | ; |      |       | ; +------|      K| ;        +-------+ ",
+    "Description": "Blackjack is a popular card game played in casinos and home settings. The objective is to beat the dealer by having a hand value as close to 21 as possible without exceeding it.",
+    "Color": "Blue"
+  },
+  {
+    "Title": "Snake",
+    "Draw": "    _    _        ; ,-(|)--(|)-.     ; \\_   ..   _/     ;   \\______/       ;     V  V         ;     `.^^`.     /\\;       \\^^^\\._./ /;        `.______/ ",
+    "Description": "Snake is a classic arcade game that has been popular for decades. The goal is to control a growing snake and guide it to eat food while avoiding collisions with the snake's own tail or the boundaries of the game board.",
+    "Color": "Green"
+  }
+]
