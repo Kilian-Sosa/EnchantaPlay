@@ -91,7 +91,9 @@ namespace EnchantaPlay {
 
         private static void ShowHeader() {
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine(logoString);
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
         private static void Exit() {
