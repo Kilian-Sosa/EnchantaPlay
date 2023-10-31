@@ -1,12 +1,13 @@
-﻿
-
+﻿using System.Diagnostics;
+using System.IO;
 using System.Text.Json;
 
 namespace EnchantaPlay {
     public class Program {
         static List<Game> Games = new List<Game>();
         static List<GameCase> GameCases = new List<GameCase>();
-        static string gamesPath = "games.json";
+        static string basePath = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.Parent.FullName;
+        static string gamesPath = Path.Combine(basePath, "games.json");
         static string logoString = @"
                 ___________             .__                   __        __________.__                
                 \_   _____/ ____   ____ |  |__ _____    _____/  |______ \______   \  | _____  ___.__.
@@ -63,6 +64,12 @@ namespace EnchantaPlay {
                     break;
             }
         }
+        private static void ShowHeader() {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine(logoString);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
 
         private static List<Game> GetGames() {
             var games = new List<Game>();
@@ -80,6 +87,7 @@ namespace EnchantaPlay {
             ShowHeader();
 
             for (int i = 0; i < 20; i++) {
+                Console.Write("    ");
                 foreach (var gameCase in GameCases) {
                     Console.ForegroundColor = gameCase.Color;
                     Console.Write($"{gameCase.ToString().Split('\n')[i]} ");
@@ -89,14 +97,10 @@ namespace EnchantaPlay {
             Console.ForegroundColor = ConsoleColor.White;
         }
 
-        private static void ShowHeader() {
-            Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine(logoString);
-            Console.ForegroundColor = ConsoleColor.White;
         }
 
         private static void Exit() {
+            ShowHeader();
             Console.WriteLine("Thanks for playing!");
             Environment.Exit(0);
         }
